@@ -23,8 +23,6 @@ end
 
 task :default => [ :foodcritic, :chefspec ]
 
-private
-
 def prepare_sandbox(sandbox)
   files = %w{*.md *.rb attributes definitions files libraries providers recipes resources templates}
   rm_rf sandbox
