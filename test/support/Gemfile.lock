@@ -30,21 +30,24 @@ GEM
       httparty
       net-ssh
       ohai
-    foodcritic (2.2.0)
+    ffi-yajl (2.6.0)
+      libyajl2 (>= 1.2)
+    foodcritic (16.3.0)
       erubis
-      gherkin (~> 2.11.7)
-      nokogiri (~> 1.5.4)
-      treetop (~> 1.4.10)
-      yajl-ruby (~> 1.1.0)
-    gherkin (2.11.8)
-      multi_json (~> 1.3)
+      ffi-yajl (~> 2.0)
+      nokogiri (>= 1.5, < 2.0)
+      rake
+      rufus-lru (~> 1.0)
+      treetop (~> 1.4)
     highline (1.6.19)
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
     ipaddress (0.8.0)
     json (1.7.7)
+    libyajl2 (2.1.0)
     mime-types (1.23)
+    mini_portile2 (2.8.9)
     minitest (4.7.4)
     minitest-chef-handler (1.0.1)
       chef
@@ -64,7 +67,9 @@ GEM
     net-ssh-multi (1.1)
       net-ssh (>= 2.1.4)
       net-ssh-gateway (>= 0.99.0)
-    nokogiri (1.5.10)
+    nokogiri (1.18.8)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
     ohai (6.16.0)
       ipaddress
       mixlib-cli
@@ -74,6 +79,7 @@ GEM
       systemu
       yajl-ruby
     polyglot (0.3.3)
+    racc (1.8.1)
     rake (10.0.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -85,6 +91,7 @@ GEM
     rspec-expectations (2.14.0)
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.2)
+    rufus-lru (1.1.0)
     systemu (2.5.2)
     treetop (1.4.14)
       polyglot
